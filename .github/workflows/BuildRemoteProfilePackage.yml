@@ -98,11 +98,11 @@ jobs:
       - name: Package Files
         run: |
           mv ./${{ env.VEHICLE }}/Helios .
-          mv './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}.hpf' './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Local.hpf'         
-          zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Images/*.*" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Local.hpf"
+          mv './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf' 'output/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
+          # zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Images/*.*" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Local.hpf"
       - name: Remote profile artefact creation
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.AUTHOR }} ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} remote helios16 profile (no images)
-          path: output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16
+          name: ${{ env.AUTHOR }} ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} remote helios profile
+          path: 'output/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
           retention-days: 2

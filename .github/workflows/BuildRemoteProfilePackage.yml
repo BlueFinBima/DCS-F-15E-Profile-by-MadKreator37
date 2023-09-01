@@ -98,6 +98,7 @@ jobs:
       - name: Package Files
         run: |
           mv ./${{ env.VEHICLE }}/Helios .
+          ls -alR
           mv './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf' 'output/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
           # zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Images/*.*" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Local.hpf"
       - name: Remote profile artefact creation

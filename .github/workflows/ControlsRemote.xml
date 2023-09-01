@@ -187,4 +187,5 @@
     <ViewportName>F_15E_LEFT_MPD_PLT</ViewportName>
     <RequiresPatches>True</RequiresPatches>
     <Children />
+  </Control>
 </Children>

@@ -1,0 +1,5 @@
+  <Interfaces>
+    <Interface TypeIdentifier="HeliosProcessControl.ProcessControlInterface" Name="Process Control">
+      <Configuration xmlns="http://Helios.local/HeliosProcessControl/Interfaces/ProcessControl/Configuration" />
+    </Interface>
+  </Interfaces>

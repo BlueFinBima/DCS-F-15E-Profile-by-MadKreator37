@@ -1,0 +1,190 @@
+<Children>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_RIGHT_MPCD_WSO" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_RIGHT_MPCD_WSO</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>1531,173</Location>
+    <Size>338,338</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_RIGHT_MPCD_WSO</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_RIGHT_MPD_WSO" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_RIGHT_MPD_WSO</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>1027,113</Location>
+    <Size>388,388</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_RIGHT_MPD_WSO</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_LEFT_MPD_WSO" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_LEFT_MPD_WSO</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>510,113</Location>
+    <Size>388,388</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_LEFT_MPD_WSO</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_LEFT_MPCD_WSO" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_LEFT_MPCD_WSO</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>56,173</Location>
+    <Size>338,338</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_LEFT_MPCD_WSO</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_RIGHT_MPD_PLT" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_RIGHT_MPD_PLT</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>1286,227</Location>
+    <Size>390,390</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_RIGHT_MPD_PLT</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_CENTER_MPCD_PLT" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_CENTER_MPCD_PLT</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>813,724</Location>
+    <Size>300,300</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_CENTER_MPCD_PLT</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+  </Control>
+  <Control TypeIdentifier="Helios.Base.ViewportExtent" Name="F15E F_15E_LEFT_MPD_PLT" SnapTarget="True" Locked="False">
+    <FillBackground>True</FillBackground>
+    <BackgroundColor>#80D92762</BackgroundColor>
+    <FontColor>#FFFFFFFF</FontColor>
+    <Font>
+      <FontFamily>Franklin Gothic</FontFamily>
+      <FontStyle>Normal</FontStyle>
+      <FontWeight>Normal</FontWeight>
+      <FontSize>12</FontSize>
+      <HorizontalAlignment>Center</HorizontalAlignment>
+      <VerticalAlignment>Center</VerticalAlignment>
+      <Padding>
+        <Left>0</Left>
+        <Top>0</Top>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </Padding>
+    </Font>
+    <Text>F_15E_LEFT_MPD_PLT</Text>
+    <ScalingMode>None</ScalingMode>
+    <Location>249,227</Location>
+    <Size>390,390</Size>
+    <Hidden>False</Hidden>
+    <ViewportName>F_15E_LEFT_MPD_PLT</ViewportName>
+    <RequiresPatches>True</RequiresPatches>
+    <Children />
+</Children>

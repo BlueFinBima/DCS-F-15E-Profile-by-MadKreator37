@@ -91,14 +91,27 @@ jobs:
           sed -i -- 's#_ProjectURL#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_Repository#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
           sed -i -- 's#_commit#'"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"'#g' '${{ env.VEHICLECOMMONNAME }} - About this profile.md'
+      - name: execute python script(s) to adjust the profile for remote Helios
+        run: |
+          echo "Removing Embedded Viewports because they are not 1:1"
+          python .github/workflows/AdjustRemoteProfile.py '${{ env.VEHICLE }}/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}.hpf' '.github/workflows/ControlsRemote.xml' '.github/workflows/BindingsRemote.xml' '.github/workflows/InterfacesRemote.xml' '${{ env.VEHICLE }}/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'         
       - name: Package Files
         run: |
           mv ./${{ env.VEHICLE }}/Helios .
-          zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply"
-      - uses: actions/upload-artifact@v3
+          zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Remote.hpf"
+          mv './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}.hpf' './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Local.hpf'         
+          zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Local.hpf"
+      - name: Local profile artefact creation
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ env.AUTHOR }} ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} helios16 profile package
           path: output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}.helios16
+          retention-days: 2
+      - name: Remote profile artefact creation
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ env.AUTHOR }} ${{ env.VEHICLECOMMONNAME }} V${{ steps.bump_tag.outputs.tag }} remote helios16 profile package
+          path: output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16
           retention-days: 2
       - name: Read About file
         id: getAbout

@@ -95,12 +95,7 @@ jobs:
         run: |
           echo "Removing Embedded Viewports because they are not 1:1"
           python .github/workflows/AdjustRemoteProfile.py '${{ env.VEHICLE }}/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}.hpf' '.github/workflows/ControlsRemote.xml' '.github/workflows/BindingsRemote.xml' '.github/workflows/InterfacesRemote.xml' '${{ env.VEHICLE }}/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
-      - name: Package Files
-        run: |
-          mv ./${{ env.VEHICLE }}/Helios .
-          ls -alR
-          mv './Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf' 'output/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
-          # zip -r output/${{ env.AUTHOR }}_${{ env.VEHICLE }}_V${{ steps.bump_tag.outputs.tag }}_Remote.helios16 ./Profile16.json ./LICENSE ./*.md ./Helios/ -x ".git/*" ".github/*" "./Helios/Profiles/*.bak" "./Helios/Images/*.*" "./Helios/Profiles/*.hply" "./Helios/Profiles/*_Local.hpf"
+          mv './${{ env.VEHICLE }}/Helios/Profiles/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf' 'output/F-15E_${{ steps.bump_tag.outputs.tag }}_${{ env.AUTHOR }}_Remote.hpf'
       - name: Remote profile artefact creation
         uses: actions/upload-artifact@v3
         with:
